@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Pushster&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+
+.logo img{
+    width: 40%;
+    border-radius: 50%;
+     border: solid greenyellow 4px;
+}
+.logo{
+         width: 30%;
+         display: flex;
+         justify-content: center;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    height: 96px;
+    
+}
+.nav-list{
+ /* background: rgb(39, 33, 33); */
+ width: 70%;
+ display:flex;
+ align-items: center;
+  }
+
+.nav-list li{
+    list-style: none;
+    padding: 15px;
+    }
+
+.nav-list li a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: -webkit-pictograph;
+}
+    
+
+.nav-list li a:hover{
+    color: red;
+    
+}
+
+.rightnav{
+    /* background: red; */
+    text-align: right;
+    width: 50%;
+
+}
+
+#search{
+    padding: 5px;
+    font-size: 10px;
+    border: 5px black solid;
+}
+.background{ 
+    background: rgba(0, 0,0, 0.8)url(../images/backgroundimg.webp);
+    background-size: cover;
+    background-blend-mode:darken;   
+}
+.box-main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    max-width: 90%;
+    margin: auto;
+    height: 80%;
+      
+}
+
+.firsthalf{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.secondhalf{
+    width: 50%;
+}
+.secondhalf img{
+    width: 250px;
+    height: 297px;
+    border-radius: 304px;
+    border: solid white 5px;
+    display: inline-block;
+    margin: center;
+    margin: auto;
+    align-items: center;
+}
+
+.text-big{
+font-size: 50px;
+color: darkseagreen;
+font-family: Arial, Helvetica, sans-serif;
+text-align: left;
+}
+
+.text-small{
+    
+}
+.buttons{
+    padding: 8px 20px;
+    margin: 5px;
+    display: block;
+    border: 5px solid;
+    color: black;
+    border-radius: 15px;
+    font-size: 14px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+    .btn-sm {
+    padding: 5px;
+    border-radius: 16px;
+    border: 5px black solid;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 70%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sectionleft{
+   flex-direction: row-reverse;
+}
+
+.paars{
+    padding: 0 70px;
+}
+.thumbnail img{
+   border: solid black 2px;
+    width: 305px;
+    margin-right: 0;
+}
+.contact{
+    background: rgb(171, 234, 253); 
+    max-width: 100%;
+    height:80%;
+}
+
+
+.text-center{
+    padding: 24px;
+    margin: 0 92px;
+    font-size: 40px;
+    font-family: serif;
+    text-align: center;
+}
+.form input{
+        text-align: center;
+    margin: auto;
+    width:40% ;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin-top: auto;
+    padding: 5px;
+    display: block;
+}
+.btn-low {
+    color: black;
+    text-align: center;
+    margin: auto;
+    padding: 0px;
+    width: 71px;
+    height: 23px;
+    border-radius: 9px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+.big-box{
+    display:block;
+    margin: auto;
+    max-width: 150px;
+    height: 115px;
+     border: solid black 2px;
+    border-radius: 5px;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+}
+.text-footer{
+    text-align: center;
+    color:white;
+    padding:10px;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+@media only screen and (max-width:425px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 350px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 80px;
+    }
+    .v-class{
+       /* opacity: 0; */
+       visibility: hidden;
+    }.section{
+        display:flex;
+        flex-direction:column-reverse;
+    }.secondhalf img{
+     width: 120px;
+     height: 120px;
+       flex-direction: column;
+    }
+    .paars{
+        padding:10px 5px;
+    }
+    .thumbnail{
+        padding:20px 0px;
+        
+    }
+}
